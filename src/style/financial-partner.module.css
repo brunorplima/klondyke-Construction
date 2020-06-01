@@ -1,0 +1,15 @@
+.container {
+   margin-top: 7rem;
+}
+
+.financialPartnerContainer {
+   display: flex;
+   justify-content: center;
+   margin-top: 3rem;
+}
+
+.text {
+   width: 80%;
+   text-align: center;
+   color: #969999;
+}

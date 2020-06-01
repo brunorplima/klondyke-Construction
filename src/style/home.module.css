@@ -2,7 +2,6 @@
    background-image: url('/construtora4.jpg');
    background-size: cover;
    color: white;
-   min-height: 23em;
    position: relative;
    z-index: -2;
    padding: 3rem;
@@ -27,8 +26,7 @@
    flex: 6;
    display: flex;
    flex-direction: column;
-   justify-content: end;
-   /* background-color: rgba(255,255,255,.5); */
+   justify-content: flex-end;
    width: 100%;
    min-height: 100%;
    text-align: center;
@@ -36,7 +34,6 @@
 
 .formContainer {
    flex: 4;
-   /* background-color: rgba(200,200,200,.5); */
    width: 100%;
    height: 100%;
    display: flex;
@@ -70,6 +67,12 @@
    width: 100%;
    padding: .5rem .3rem;
    margin-bottom: 1rem;
+   border: none;
+   border-bottom: 1px solid #969999;
+}
+
+.input:focus {
+   border-bottom: 2px solid #3D3D3D;
 }
 
 .button {
@@ -78,6 +81,40 @@
    text-align: center;
    border-radius: 2rem;
    width: 100%;
-   padding: .3rem 0;
+   padding: .5rem 0;
    margin: 1rem 0;
+   user-select: none;
+   cursor: pointer;
+   font-size: 14pt;
+   border: none;
+   color: white;
+}
+
+@media screen and (max-width: 800px) {
+   .mainBanner {
+      min-height: 42rem;
+      background-position: center;
+   }
+
+   .content {
+      flex-direction: column !important;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .mainBanner {
+      padding: 3rem 1rem !important;
+   }
+
+   .text {
+      margin-top: 1rem;
+   }
+
+   .h1 {
+      font-size: 34pt;
+   }
+
+   .form {
+      max-width: 300px;
+   }
 }

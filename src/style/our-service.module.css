@@ -1,0 +1,25 @@
+.container {
+   margin-top: 7rem;
+}
+
+.ourServiceContainer {
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 4rem;
+}
+
+/* .iconContainer {
+} */
+
+.icon {
+   font-size: 50pt;
+   color: #E7C700;
+}
+
+.text {
+   text-align: center;
+   width: 80%;
+   color: #969999;
+}

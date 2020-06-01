@@ -6,14 +6,59 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: #114093;
+  margin: 0;
+  font-size: 20pt;
+}
+
+.subHeading {
+  display: flex;
+  justify-content: center;
+}
+
+.subHeading > p {
+  width: 20rem;
+  text-align: center;
+  margin: 0;
+  color: #3D3D3D;
+}
+
+
+
+.goToTop {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 5s;
+}
+
+.arrowUp {
+  font-size: 24pt;
+  color: white;
 }

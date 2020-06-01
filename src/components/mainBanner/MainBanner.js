@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import styles from '../../style/home.module.css';
 
 const MainBanner = () => {
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+
    return (
       <div className={styles.mainBanner}>
          <div className={styles.overlay}></div>
@@ -15,10 +18,20 @@ const MainBanner = () => {
 
             <div className={styles.formContainer}>
                <form className={styles.form}>
-                  <input type='text' placeholder='Name' className={styles.input}></input>
-                  <input type='text' placeholder='Email' className={styles.input}></input>
+                  <input 
+                     type='text' 
+                     placeholder='Name' 
+                     className={styles.input}
+                     onChange={e => setName(e.target.value)}
+                     value={name}></input>
+                  <input 
+                     type='text' 
+                     placeholder='Email' 
+                     className={styles.input}
+                     onChange={e => setEmail(e.target.value)}
+                     value={email}></input>
                   <input type='text' placeholder='Something' className={styles.input}></input>
-                  <butto className={styles.button}>Subscribe</butto>
+                  <button className={styles.button}>Subscribe</button>
                </form>
             </div>
          </div>
