@@ -5,6 +5,10 @@ const MainBanner = () => {
    const [name, setName] = useState('');
    const [email, setEmail] = useState('');
 
+   const handleSubscribeClickEvent = () => {
+      alert('NO LOGIC SET UP YET!')
+   }
+
    return (
       <div className={styles.mainBanner}>
          <div className={styles.overlay}></div>
@@ -31,7 +35,7 @@ const MainBanner = () => {
                      onChange={e => setEmail(e.target.value)}
                      value={email}></input>
                   <input type='text' placeholder='Something' className={styles.input}></input>
-                  <button className={styles.button}>Subscribe</button>
+                  <button className={styles.button} onClick={() => handleSubscribeClickEvent()}>Subscribe</button>
                </form>
             </div>
          </div>

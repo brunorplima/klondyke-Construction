@@ -31,7 +31,7 @@ const Features = () => {
          </div>
          
          <div id='features' className={styles.featuresOuterContainer}>
-            <h2>FEATURES</h2>
+            <h2>BENEFITS</h2>
             <div className='subHeading'>
                <p>Phasellus leo risus, elementum in sagittis ac, rutrum dignissim enim</p>
             </div>
