@@ -22,7 +22,7 @@ export default function Home(props) {
         <title>Klondyke Construction</title>
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <MainBannerContainer />
 
@@ -34,9 +34,9 @@ export default function Home(props) {
 
       <Contact />
 
-      <div className='goToTop' onClick={() => goToTop()}>
+      {/* <div className='goToTop' onClick={() => goToTop()}>
         <TiArrowUpOutline className='arrowUp'/>
-      </div>
+      </div> */}
     </Layout>
   )
 }
