@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../../style/navbar.module.css'
-import { FiMenu } from 'react-icons/fi'
-import { GrClose } from 'react-icons/gr'
-import { MdClose } from 'react-icons/md'
+import DropDownMenu from './DropDownMenu';
 
 const Navbar = () => {
 
@@ -17,9 +15,9 @@ const Navbar = () => {
 
    return (
       <div className={styles.navbar}>
-         <ul className={styles.list} style={isOpen ? {display: 'flex'} : {}}>
+         <ul className={styles.list}>
             <li className={styles.item} onClick={() => clickLink()}>
-               <a href="#features" className={styles.anchor}>FEATURES</a>
+               <a href="#features" className={styles.anchor}>BENEFITS</a>
                <div className={styles.borderBottom}></div>
             </li>
             <li className={styles.item} onClick={() => clickLink()}>
@@ -39,12 +37,9 @@ const Navbar = () => {
                <div className={styles.borderBottom}></div>
             </li>
          </ul>
-         <div className={styles.menuContainer} style={isOpen ? {backgroundColor:'transparent'} : {}} onClick={() => setIsOpen(!isOpen)}>
-            {
-               isOpen ?
-               <MdClose className={styles.closeMenuIcon}/> :
-               <FiMenu className={styles.openMenuIcon}/>
-            }
+         <div className='ddm'>
+            Hi
+            <DropDownMenu isOpen={isOpen} setIsOpen={setIsOpen} clickLink={clickLink}/>
          </div>
       </div>
    )

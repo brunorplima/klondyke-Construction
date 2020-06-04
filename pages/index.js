@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Layout from '../src/components/layout/Layout'
-import MainBanner from '../src/components/mainBanner/MainBanner'
+import MainBannerContainer from '../src/components/mainBanner/MainBannerContainer'
 import Navbar from '../src/components/navbar/Navbar'
 import Features from '../src/components/features/Features'
 import OurServices from '../src/components/our-service/OurService'
@@ -24,7 +24,7 @@ export default function Home(props) {
 
       <Navbar />
 
-      <MainBanner />
+      <MainBannerContainer />
 
       <Features />
 
