@@ -60,7 +60,7 @@
    background-color: white;
    max-width: 240px;
    position: relative;
-   /* transform: translateY(9rem); */
+   transform: translateY(12rem);
 }
 
 .input {
