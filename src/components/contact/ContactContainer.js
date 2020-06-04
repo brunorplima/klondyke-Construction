@@ -16,6 +16,7 @@ const ContactContainer = () => {
             setSubject={setSubject}
             message={message}
             setMessage={setMessage}
+            handleSend={handleSend}
         />
     )
 }

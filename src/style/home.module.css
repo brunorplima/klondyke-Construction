@@ -101,6 +101,12 @@
    }
 }
 
+@media screen and (max-width: 550px) {
+   .mainBanner {
+      background-position: 70% 0%;
+   }
+}
+
 @media screen and (max-width: 450px) {
    .mainBanner {
       padding: 3rem 1rem !important;
