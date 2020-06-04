@@ -91,3 +91,18 @@
 .button:hover {
    background-color: #C7A700;
 }
+
+@media screen and (max-width: 700px) {
+   .contactContent {
+      flex-direction: column;
+   }
+   .contactInfo {
+      order: 2;
+   }
+}
+
+@media screen and (max-width: 410px) {
+   .contactContent {
+      padding: 3rem 1rem;
+   }
+}
