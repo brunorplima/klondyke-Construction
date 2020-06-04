@@ -19,7 +19,7 @@
 
 .content {
    display: flex;
-   height: 20rem;
+   min-height: 20rem;
 }
 
 .text {
