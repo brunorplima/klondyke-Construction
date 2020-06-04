@@ -22,7 +22,7 @@ export default function Home(props) {
         <title>Klondyke Construction</title>
       </Head>
 
-      {/* <Navbar /> */}
+      <Navbar />
 
       <MainBannerContainer />
 

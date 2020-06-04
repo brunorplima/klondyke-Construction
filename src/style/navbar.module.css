@@ -1,7 +1,3 @@
-/* .ddm {
-   display: none;
-}
-
 .navbar {
    display: flex;
    justify-content: right;
@@ -53,9 +49,6 @@
 }
 
 @media screen and (max-width: 800px) {
-   .ddm {
-      display: none;
-   }
    .menuContainer {
       display: flex;
       width: 4rem;
@@ -112,4 +105,4 @@
    .closeMenuIcon {
       font-size: 26pt;
    }
-} */
+}

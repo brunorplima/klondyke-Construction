@@ -37,10 +37,6 @@ const Navbar = () => {
                <div className={styles.borderBottom}></div>
             </li>
          </ul>
-         <div className='ddm'>
-            Hi
-            <DropDownMenu isOpen={isOpen} setIsOpen={setIsOpen} clickLink={clickLink}/>
-         </div>
       </div>
    )
 }
