@@ -6,7 +6,7 @@ import Navbar from '../src/components/navbar/Navbar'
 import Features from '../src/components/features/Features'
 import OurServices from '../src/components/our-service/OurService'
 import FinancialPartner from '../src/components/financial-partner/FinancialPartner'
-import Contact from '../src/components/contact/Contact'
+import ContactContainer from '../src/components/contact/ContactContainer'
 import { TiArrowUpOutline } from 'react-icons/ti'
 
 export default function Home(props) {
@@ -32,7 +32,7 @@ export default function Home(props) {
 
       <FinancialPartner />
 
-      <Contact />
+      <ContactContainer />
 
       {/* <div className='goToTop' onClick={() => goToTop()}>
         <TiArrowUpOutline className='arrowUp'/>

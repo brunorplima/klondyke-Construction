@@ -1,14 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../../style/contact.module.css'
 
-const Contact = () => {
-   const [subject, setSubject] = useState('');
-   const [message, setMessage] = useState('');
-
-   const handleSend = e => {
-      e.preventDefault();
-      alert('NO LOGIC SET UP YET!!!');
-   }
+const Contact = props => {
 
    return (
       <div id='contact' className={styles.container}>
@@ -32,21 +25,21 @@ const Contact = () => {
                      type='text'
                      placeholder='Subject'
                      className={styles.subjectInput}
-                     value={subject}
-                     onChange={e => setSubject(e.target.value)}>
+                     value={props.subject}
+                     onChange={e => props.setSubject(e.target.value)}>
                   </input>
 
                   <textarea
                      placeholder='Message'
                      className={styles.message}
-                     value={message}
-                     onChange={e => setMessage(e.target.value)}>
+                     value={props.message}
+                     onChange={e => props.setMessage(e.target.value)}>
                   </textarea>
 
                   <div className={styles.buttonContainer}>
                      <button 
                         className={styles.button}
-                        onClick={e => handleSend(e)}>Send</button>
+                        onClick={e => props.handleSend(e)}>Send</button>
                   </div>
                </form>
             </div>
