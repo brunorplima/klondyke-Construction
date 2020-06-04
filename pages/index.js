@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Layout from '../src/components/layout/Layout'
 import MainBannerContainer from '../src/components/mainBanner/MainBannerContainer'
-import Navbar from '../src/components/navbar/Navbar'
+import NavbarContainer from '../src/components/navbar/NavbarContainer'
 import Features from '../src/components/features/Features'
 import OurServices from '../src/components/our-service/OurService'
 import FinancialPartner from '../src/components/financial-partner/FinancialPartner'
@@ -22,7 +22,7 @@ export default function Home(props) {
         <title>Klondyke Construction</title>
       </Head>
 
-      <Navbar />
+      <NavbarContainer />
 
       <MainBannerContainer />
 

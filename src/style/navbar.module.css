@@ -1,7 +1,7 @@
 .navbar {
    display: flex;
-   justify-content: right;
-   position: fixed;
+   justify-content: flex-end;
+   position: absolute;
    width: 100%;
 }
 
@@ -60,15 +60,6 @@
       position: absolute;
       top: 0;
       right: 0;
-   }
-
-
-
-
-
-
-   .navbar {
-      display: none;
    }
    .list {
       display: none;
