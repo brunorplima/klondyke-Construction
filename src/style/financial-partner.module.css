@@ -1,5 +1,7 @@
 .container {
-   margin-top: 7rem;
+   padding-top: 7rem;
+   padding-bottom: 7rem;
+   background: linear-gradient(rgba(17, 64, 147, .5), rgba(17, 64, 147, 0));
 }
 
 .financialPartnerContainer {
@@ -11,5 +13,4 @@
 .text {
    width: 80%;
    text-align: center;
-   color: #969999;
 }

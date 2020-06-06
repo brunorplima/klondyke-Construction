@@ -6,7 +6,7 @@ const OurService = () => {
    return (
       <div id='our-services' className={styles.container}>
          <h2>OUR SERVICE</h2>
-         <div className='subHeading'>
+         <div className={styles.subHeading}>
             <p>Cras sit amet lectus nec mi pharetra consectetur vel eu massa sed volutpat turpis sapien</p>
          </div>
          <div className={styles.ourServiceContainer}>
